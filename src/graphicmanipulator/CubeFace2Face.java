@@ -28,7 +28,9 @@ public class CubeFace2Face extends PApplet {
     @Override
     public void draw() {
         background(255);
-        lights();
+        
+        cube1.setFill(color(random(255), random(255), random(255)));
+        cube2.setFill(color(random(255), random(255), random(255)));
         
         a += 0.005;
         if(a > TWO_PI) { 

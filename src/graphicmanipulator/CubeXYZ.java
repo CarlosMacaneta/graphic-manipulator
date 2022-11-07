@@ -19,14 +19,14 @@ public class CubeXYZ extends PApplet {
     @Override
     public void setup() {
         strokeWeight(9);
-
         cube = createShape(BOX, 150);
     }
 
     @Override
     public void draw() {
         background(255);
-        lights();
+        cube.setFill(color((int) random(255), (int) random(200), (int) random(150)));
+        delay(100);
 
         int x = 372;
         int y = 450;

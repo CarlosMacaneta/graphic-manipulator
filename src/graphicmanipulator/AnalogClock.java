@@ -72,12 +72,27 @@ public class AnalogClock extends PApplet {
     
     @Override
     public void keyPressed() {
-        if (key == CODED) {
-            if(keyCode == SHIFT) {
-                System.exit(0);      
-            }
+        switch (key) {
+            case CODED:
+                if(keyCode == SHIFT) {
+                    System.exit(0);
+                }   break;
+            case 'H':
+            case 'h':
+                
+                break;
+            case 'M':
+            case 'm':
+                
+                break;
+            case 'S':
+            case 's':
+                
+                break;
+            default:
+                break;
         }
-      }
+    }
     
     public static void main(String[] args) {
         PApplet.main(AnalogClock.class, args);
